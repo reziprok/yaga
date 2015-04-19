@@ -7,8 +7,6 @@
   
 2) clone (or fork) the following repo to your projectfolder ("yaga")  
 	cmd: $ git clone https://github.com/reziprok/yaga.git   
-	or  
-	cmd: $ git fork https://github.com/reziprok/yaga.git  
 	=> mind that the repo doesn't contain  
 		- any bower components  
 		- any locally installed gulp components (via npm)  
