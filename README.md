@@ -5,7 +5,7 @@
   
 1) have node.js and git locally installed. Close firefox.
   
-2) clone (or fork) the following repo to your projectfolder ("yaga")  
+2) clone the following repo to your machine  
 	cmd: $ git clone https://github.com/reziprok/yaga.git   
 	=> mind that the repo doesn't contain  
 		- any bower components  
