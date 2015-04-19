@@ -23,8 +23,7 @@
 5) install all external dependencies
 	cmd: $ bower install  
   
-6) make initial bundle and start gulp watcher (and open browser with index.html)  
-	cmd: $ gulp
+6) make initial bundle and start gulp watcher (and open browser with index.html) cmd: $ gulp  
   
 addionitionally) gulping only specific tasks: ex:  
 	*  cmd: $ gulp scripts (concatenats all scripts and minifies them. Result: assets/js/app.min.js)  
