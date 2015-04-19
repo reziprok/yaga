@@ -1,6 +1,6 @@
-# yaga
+## yaga ##
 
-yet another gallery app for demonstration purposes.
+# yet another gallery app for demonstration purposes. #
 
 regards to flx from webkanal.ch
 
