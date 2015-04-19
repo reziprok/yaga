@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var clean = require('gulp-clean');
+var open = require('gulp-open');
 
 var config = {
     bowerDir: './bower_components'
@@ -117,6 +118,11 @@ gulp.task('styles', function() {
 		.pipe(concat('build.min.css'))
 		.pipe(minifyCSS())
 		.pipe(gulp.dest('assets/css'));
+});
+
+gulp.task('run', function(){
+  	return gulp.src('./index.html')
+  		.pipe(open('<%file.path%>'));
 });	
 
 gulp.task('watch', function() {
