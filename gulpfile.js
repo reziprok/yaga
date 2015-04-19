@@ -122,18 +122,13 @@ gulp.task('styles', function() {
 
 
 gulp.task('url', function(){
-	var options = {
-		url: 'http://localhost',
-		app: 'firefox'
-	};
-	
-	return gulp.src('./index.html')
-		.pipe(open('', options));
+  	return gulp.src('./index.html')
+  		.pipe(open('<%file.path%>'));
 });	
 
 gulp.task('watch', function() {
     gulp.watch(['assets/**/*.js','assets/**/*.css'], ['styles', 'scripts']);
 });
 
-gulp.task('default', ['componentJquery', 'watch', 'scripts', 'styles', 'componentBootstrap', 'componentFA', 'componentSwiper', 'componentTemplate7', 'componentKnockout', 'componentWatch', 'componentModernizr', 'componentBS', 'MoveCSS', 'MoveJS', 'clean2']); 
+gulp.task('default', ['componentJquery', 'watch', 'scripts', 'styles', 'componentBootstrap', 'componentFA', 'componentSwiper', 'componentTemplate7', 'componentKnockout', 'componentWatch', 'componentModernizr', 'componentBS', 'MoveCSS', 'MoveJS', 'clean2', 'url']); 
 
