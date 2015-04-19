@@ -1,0 +1,90 @@
+<style>
+	#main-menu{
+		padding-top:5px;	
+		overflow:hidden;
+	}
+	
+	
+	.menu-titel{
+		line-height:20px;
+		padding: 20px;
+		font-size:40px;
+		position:relative;
+	}
+	
+	.sub-menu-titel{
+		line-height:20px;
+		padding: 20px;
+		background:silver;	
+		position:relative;
+		padding-left:60px;
+	}
+	
+	.sub-menu-wrapper{
+		position:absolute;
+		top:0;
+		right:0;
+		left:0;
+		bottom:0;
+		transition: all 150ms ease-in-out;
+		-webkit-transform: translate3d(320px,0,0);
+		-moz-transform: translate(320px,0);
+		-ms-transform: translate(320px,0);
+		transform: translate3d(320px,0);
+		z-index:3;
+		background:black;
+	}
+	
+	.sub-menu-wrapper > ul{
+		margin:20px;
+	}
+	
+	.sub-menu-wrapper  i{
+		position:absolute;
+		font-size:26px;
+		left:10px;
+		top:15px;
+	}
+</style>
+
+<!--1st stack of menu-->
+<div id="main-menu">
+	<div class="menu-titel">
+		fPix
+	</div>
+	<ul>
+		<li>
+			<a href="">
+				Foto-Alben
+			</a>
+			<!--2nd stack of menu-->
+			<div class="menu-item sub-menu-wrapper">
+				<div class="sub-menu-titel">
+					<i class="fa-arrow-left fa fa-2x"></i> Foto-Alben
+				</div>
+				<ul>
+					<li>
+						<a href="" data-id="4" data-model="privategalleries">
+							Private
+						</a>
+					</li>
+					<li>
+						<a href="" data-id="4" data-model="publicgalleries">
+							Public
+						</a>
+					</li>
+				</ul>
+			</div>
+		</li>
+		<li>
+			<a href="" data-id="2" data-model="login">
+				Login Benutzer-Konto
+			</a>
+		</li>
+		<li>
+			<a href="" data-id="3" data-model="upload">
+				Upload Fotos
+			</a>
+		</li>
+	</ul>
+</div>

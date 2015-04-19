@@ -1,0 +1,43 @@
+.homeTemplate{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background: #fff url('../../assets/img/yaga_mockup.jpg') center center no-repeat; 
+	background-size:cover;	
+} 
+
+	.homeTemplate .homeBox{
+		text-align:center;
+		font-size:80px;
+		color:white;
+		text-transform:uppercase;
+		font-weight:bold;
+		
+	}
+	
+			.homeBox h1{
+				font-size:100px;		
+			}
+			
+			.homeBox h4{
+				font-size:40px;		
+			}
+	
+	.homeTemplate .fork{
+		width:149px;
+		height:149px;
+		position:absolute;
+		right:0;
+		top:0;
+		background: transparent url('../../assets/img/fork.png') left top no-repeat;
+		cursor:pointer;	
+	}
+
+
+@media all and (min-width: 1680px){
+	.homeTemplate{
+		left:320px;	
+	}
+}

@@ -1,0 +1,34 @@
+{
+  "name": "fPix App",
+  "version": "0.1",
+  "homepage": "https://github.com/reziprok/fpix",
+  "authors": [
+    "Mirza Grossniklaus <korpizer@gmail.com>"
+  ],
+  "description": "YAGA - yet another gallery app",
+  "main": "assets/js/watch.js",
+  "keywords": [
+    "pix",
+    "pictures",
+    "images",
+    "gallery",
+    "album",
+    "capture"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.3.0",
+    "jquery-2.1.0.min": "http://code.jquery.com/jquery-2.1.0.min.js",
+    "knockout": "~3.3.0",
+    "swiper": "~3.0.6",
+    "modernizr": "~2.8.3",
+    "template7": "~1.0.5",
+    "watch": "*"
+  }
+}

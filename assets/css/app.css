@@ -1,0 +1,22 @@
+#app-container{
+	position:relative;	
+}
+
+
+@media all and (min-width: 1680px){
+	#navToggler{
+		display:none;	
+	}
+}
+
+@media all and (min-width: 1024px){
+	#navToggler{
+		display:none !important;	
+	}
+}
+
+@media all and (min-width: 768px){
+	#menu-container{
+		
+	}
+}
