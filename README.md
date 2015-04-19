@@ -1,8 +1,7 @@
-## yaga ##
+# yaga #
 
-# yet another gallery app for demonstration purposes. #
-
-regards to flx from webkanal.ch
+### yet another gallery app for demonstration purposes. ###
+#### regards to flx from webkanal.ch ####
 
 1) have node.js and git locally installed. Close firefox.
 
