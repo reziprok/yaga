@@ -5,17 +5,17 @@
 
 1) have node.js and git locally installed. Close firefox.
 
-2) clone (or fork) the following repo to your projectfolder ("yaga")
-	cmd: $ git clone https://github.com/reziprok/yaga.git 
-or
-	cmd: $ git fork https://github.com/reziprok/yaga.git
-	=> mind that the repo doesn't contain
-		- any bower components
-		- any locally installed gulp components (via npm)
-		- any external libraries (jquery etc...)
-		- any bundeled (concatenated) files (app.min.js, app.min.css)
-		- .gitignore contains exceptions for syncing with git
-	=> you can check it here: https://github.com/reziprok/yaga 
+2) clone (or fork) the following repo to your projectfolder ("yaga")  
+	cmd: $ git clone https://github.com/reziprok/yaga.git   
+	or  
+	cmd: $ git fork https://github.com/reziprok/yaga.git  
+	=> mind that the repo doesn't contain  
+		- any bower components  
+		- any locally installed gulp components (via npm)  
+		- any external libraries (jquery etc...)  
+		- any bundeled (concatenated) files (app.min.js, app.min.css)  
+		- .gitignore contains exceptions for syncing with git  
+	=> you can check it here: https://github.com/reziprok/yaga   
 
 3) open CLI and navigate to yaga folder
 
