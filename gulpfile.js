@@ -84,13 +84,13 @@ var Movec = [
     ];
 
 gulp.task('MoveCSS', function(){
-  return gulp.src(Movec,{base:config.bowerDir})
-	  .pipe(gulp.dest('assets/css'));
+  	return gulp.src(Movec,{base:config.bowerDir})
+	 	.pipe(gulp.dest('assets/css'));
 });
 
 gulp.task('MoveJS', function(){
-  return gulp.src(Movej,{base:config.bowerDir})
-	  .pipe(gulp.dest('./assets/js'));
+  	return gulp.src(Movej,{base:config.bowerDir})
+	  	.pipe(gulp.dest('./assets/js'));
 });
 
 /*
@@ -100,8 +100,8 @@ gulp.task('move2', function(){
 });
 */
 gulp.task('clean2',function(){
-  return gulp.src(['assets/js/vendor'], {base:'./', read:false})
-  .pipe(clean({force: true}));
+  	return gulp.src(['assets/js/vendor'], {base:'./', read:false})
+  		.pipe(clean({force: true}));
 });
 
 // Concatenate & Minify JS
