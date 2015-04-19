@@ -1,33 +1,31 @@
-# yaga #
+### Welcome to my github page.
+this example app is for my own personal learning curve in developing html5 and javascript the modern way.
+  
+For the installation process node.js and git have to be installed. At the end of the process, an initial automatic gulp-build process is run to complete the installation. firefox brower ist started automatically showing the app.
 
-### yet another gallery app for demonstration purposes. ###
-#### regards to flx from webkanal.ch ####
+``` 
+$ cd your_repo_root/
+$ git clone https://github.com/reziprok/yaga.git
+```
   
-1) have node.js and git locally installed. Close firefox.
+now we have to get all the required componbents. I have a packages.json file in the app root to tell node what dependencies to load.
+Load gulp and plugins
+```  
+$ npm install
+```  
   
-2) clone the following repo to your machine  
-	cmd: $ git clone https://github.com/reziprok/yaga.git   
-	=> mind that the repo doesn't contain  
-		- any bower components  
-		- any locally installed gulp components (via npm)  
-		- any external libraries (jquery etc...)  
-		- any bundeled (concatenated) files (app.min.js, app.min.css)  
-		- .gitignore contains exceptions for syncing with git  
-	=> you can check it here: https://github.com/reziprok/yaga   
-
-3) open CLI and navigate to yaga folder
+If you don't have bower installed globally on your machine, run the following command
+```  
+$ npm install -g bower
+``` 
   
-4) install gulp dependencies
-	cmd:  $ npm install  
+Load external JS and CSS libraries  
+```  
+$ bower install
+``` 
   
-5) install all external dependencies
-	cmd: $ bower install  
-  
-6) make initial bundle and start gulp watcher (and open browser with index.html) cmd: $ gulp  
-  
-addionitionally) gulping only specific tasks: ex:  
-	*  cmd: $ gulp scripts (concatenats all scripts and minifies them. Result: assets/js/app.min.js)  
-	*  cmd: $ gulp styles (concatenats all styles and minifies them. Result: assets/css/app.min.css)  
-	*  cmd: $ gulp url (opens the browser)  
-	*  Etc...  
-
+nbow we have gulp and all libraries in place. Let's run a first initial gulp-build process to complete the final directory structure
+```  
+$ gulp
+``` 
+Firefoy should pop up with the app.  
