@@ -120,9 +120,15 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest('assets/css'));
 });
 
-gulp.task('run', function(){
-  	return gulp.src('./index.html')
-  		.pipe(open('<%file.path%>'));
+
+gulp.task('url', function(){
+	var options = {
+		url: 'http://localhost',
+		app: 'firefox'
+	};
+	
+	return gulp.src('./index.html')
+		.pipe(open('', options));
 });	
 
 gulp.task('watch', function() {
