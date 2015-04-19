@@ -4,5 +4,5 @@ This example app is for my own personal learning curve in developing html5 / CSS
   
 For the installation process node.js and git have to be installed. At the end of the process, an initial automatic gulp-build process is run to complete the installation. firefox brower ist started automatically showing the app.
   
-My Project page: http://reziprok.github.io/yaga/
+More on my Project page: http://reziprok.github.io/yaga/
   
