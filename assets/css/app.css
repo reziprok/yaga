@@ -13,8 +13,8 @@
 	#navToggler{
 		display:none !important;	
 	}
-}
-
+} 
+ 
 @media all and (min-width: 768px){
 	#menu-container{
 		

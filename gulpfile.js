@@ -7,6 +7,7 @@ var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var clean = require('gulp-clean');
 var open = require('gulp-open');
+var livereload = require('gulp-livereload');
 
 var config = {
     bowerDir: './bower_components'
@@ -109,7 +110,8 @@ gulp.task('scripts', function() {
 	return gulp.src(['assets/js/pages.model.js','assets/js/navigationStack.jquery.js','assets/js/app.js','assets/views/home/home.js'])
 		.pipe(concat('build.min.js'))
 		.pipe(uglify())
-		.pipe(gulp.dest('assets/js'));
+		.pipe(gulp.dest('assets/js'))
+		.pipe(livereload())
 });	
 
 // Concatenate & Minify CSS
@@ -117,16 +119,18 @@ gulp.task('styles', function() {
 	return gulp.src(['assets/css/app.css','assets/inc/views/home/home.css'])
 		.pipe(concat('build.min.css'))
 		.pipe(minifyCSS())
-		.pipe(gulp.dest('assets/css'));
+		.pipe(gulp.dest('assets/css'))
+		.pipe(livereload())
 });
 
 
 gulp.task('url', function(){
-  	return gulp.src('./index.html')
-  		.pipe(open('<%file.path%>'));
+	return gulp.src('./index.html')
+  		.pipe(open('<%file.path%>', {app: 'firefox'}));
 });	
 
 gulp.task('watch', function() {
+	livereload.listen();
     gulp.watch(['assets/**/*.js','assets/**/*.css'], ['styles', 'scripts']);
 });
 
